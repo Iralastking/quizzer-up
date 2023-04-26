@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+  header {
+    display: block;
+    background: #463293;
+}
+header h1 {
+  display: inline-block;
+  padding: 20px;
+  margin: 0;
+  background: #238fd2;
+  color: #fff;
+  text-transform: uppercase;
+}
