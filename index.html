@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Quizzer-up</title>
+</head>
+<body>
+    <section class="card">
+        <section class="card-header">
+          <h1>View High Score</h1>
+          <h1>Timer</h1>
+        </section>
+      </section>  
+
+    <h1>Quiz Up Coding</h1>
+
+    <p>
+        Try to answer the following code-related questions within the time limit.  <p>
+        Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+    </p>
+    <button id="Start Quiz" class="btn">Start Quiz</button>
+
+    <section class="question-container">
+        <h2 class="question-text">Question 1.What does HTML stand for ?</h2>
+        <section class="answer-container">
+            <button class="answer-button" data-correct="false">1. Hyper Text Markup Language</button>
+            <button class="answer-button" data-correct="false">2. Hyperlinks and text markup language</button>
+            <button class="answer-button" data-correct="true">3. Home tool markup language</button>
+        </section>
+    </section>
+
+    <section class="question-container">
+        <h2 class="question-text">Question 2.Which character is used to indicate an end tag?</h2>
+        <section class="answer-container">
+            <button class="answer-button" data-correct="false">1. /</button>
+            <button class="answer-button" data-correct="false">2. < </button>
+            <button class="answer-button" data-correct="false">3. *</button>
+            <button class="answer-button" data-correct="true">4. ^ </button>
+        </section>
+    </section>
+
+    <section class="question-container">
+        <h2 class="question-text">Question 3.How can you make a numbered list?</h2>
+        <section class="answer-container">
+            <button class="answer-button" data-correct="false">1. ol</button>
+            <button class="answer-button" data-correct="false">2. dl</button>
+            <button class="answer-button" data-correct="false">3. list</button>
+            <button class="answer-button" data-correct="true">4. ul</button>
+        </section>
+    </section>
+    <section class="question-container">
+        <h2 class="question-text">Question 4.Which HTML element defines the title of a document?</h2>
+        <section class="answer-container">
+            <button class="answer-button" data-correct="false">1.title </button>
+            <button class="answer-button" data-correct="false">2.head</button>
+            <button class="answer-button" data-correct="false">3.meta</button>
+            <button class="answer-button" data-correct="true">4.header</button>
+        </section>
+    </section>
+    <section class="question-container">
+        <h2 class="question-text">Question 5.Choose the correct HTML element for the largest heading:</h2>
+        <section class="answer-container">
+            <button class="answer-button" data-correct="false">1.h6</button>
+            <button class="answer-button" data-correct="false">2.h1 </button>
+            <button class="answer-button" data-correct="false">3.heading</button>
+            <button class="answer-button" data-correct="true">4. head </button>
+        </section>
+    </section>
+    <section class="score-container">
+        <h2 class="score-text">Score: <span id="score">0</span>/3</h2>
+        <section>
+            <h2>
+                <p>
+                    Your final score is:_ _ </p>
+                    Enter Initial:_ _ 
+                </p>
+            </h2> 
+    
+         <section>
+            <button id="submit" class="btn">submit</button>
+          </section>
+    
+          <section>
+            <h2>High Score</h2>
+            <h2>
+                <p>
+                    1.___  
+                </p>
+            </h2> 
+        <button class="ClearHighScores" onclick="GoBack()">ClearHighScores</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

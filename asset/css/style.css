@@ -1,10 +1,11 @@
-* {
+/* * {
     box-sizing: border-box;
   }
   
   body {
     font-family: Arial;
     margin: 0;
+   
   }
 
   header {
@@ -17,5 +18,74 @@ header h1 {
   margin: 0;
   background: #238fd2;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+/* } */
+
+
+.question-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Question text */
+.question-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Answer container */
+.answer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Answer button */
+.answer-button {
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Answer button hover */
+.answer-button:hover {
+  background-color: #2980b9;
+}
+
+/* Correct answer button */
+.correct-answer {
+  background-color: #2ecc71;
+}
+
+/* Incorrect answer button */
+.incorrect-answer {
+  background-color: #e74c3c;
+}
+
+/* Score container */
+.score-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Score text */
+.score-text {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 10px;
 }
