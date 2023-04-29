@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
   }
   
@@ -12,14 +12,22 @@
     display: block;
     background: #463293;
 }
-header h1 {
-  display: inline-block;
-  padding: 20px;
+
+ h1 {
+  display: inline block;
+  padding: 10px;
   margin: 0;
-  background: #238fd2;
+  background: #463293;
   color: #fff;
-  text-transform: uppercase; */
-/* } */
+  text-transform: uppercase;
+ } 
+
+ .StartQuiz-button:hover {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #2980b9;
+}
 
 
 .question-container {
@@ -53,7 +61,7 @@ header h1 {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #3498db;
+  background-color: #38328e;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
     <title>Quizzer-up</title>
 </head>
 <body>
@@ -21,8 +21,9 @@
         Try to answer the following code-related questions within the time limit.  <p>
         Keep in mind that incorrect answers will penalize your score/time by ten seconds!
     </p>
+    <section class="Start Quiz-container">
     <button id="Start Quiz" class="btn">Start Quiz</button>
-
+</section>
     <section class="question-container">
         <h2 class="question-text">Question 1.What does HTML stand for ?</h2>
         <section class="answer-container">
@@ -33,11 +34,11 @@
     </section>
 
     <section class="question-container">
-        <h2 class="question-text">Question 2.Which character is used to indicate an end tag?</h2>
+        <h2 class="question-text">Question 2.Which character is used to indicate an Start tag?</h2>
         <section class="answer-container">
-            <button class="answer-button" data-correct="true">1. </</button>
-            <button class="answer-button" data-correct="false">2. < </button>
-            <button class="answer-button" data-correct="false">3. *</button>
+            <button class="answer-button" data-correct="true">1.  < </button>
+            <button class="answer-button" data-correct="false">2. / </button>
+            <button class="answer-button" data-correct="false">3. * </button>
             <button class="answer-button" data-correct="false">4. ^ </button>
         </section>
     </section>
@@ -90,9 +91,8 @@
                     1.___  
                 </p>
             </h2> 
-        <button class="ClearHighScores" onclick="GoBack()">ClearHighScores</button>
+        <button class="btn custom-btn" >ClearHighScores</button>
     </section>
-
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
