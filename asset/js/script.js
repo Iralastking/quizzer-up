@@ -6,6 +6,7 @@ const questions = [
             { text: "1.Hyper Text Markup Language", correct: true},
             { text: "2.Hyperlinks and text markup language", correct: false },
             { text: "3.Home tool markup language", correct: false },
+            { text: "4.Home tool markup ", correct: false },
         ]
     },
     {
@@ -47,11 +48,14 @@ const questions = [
 
 ];
 
+document.getElementById("Start").addEventListener("click",function(){
+    questionContainer.style.display = "block"
+})
 // DOM elements
 const questionContainer = document.querySelector('.question-container');
 const answerButtons = document.querySelectorAll('.answer-button');
 const scoreText = document.querySelector('#score');
-
+const scoreContainer = document.querySelector('.score-container');
 // Quiz game variables
 let currentQuestion = 0;
 let score = 0;
@@ -67,9 +71,14 @@ function loadQuestion() {
 
     questionText.innerText = currentQuestionData.question;
     answerButtons.forEach((button, index) => {
-        button.innerText = currentQuestionData.answers[index].text;
-        button.dataset.correct = currentQuestionData.answers[index].correct;
-        button.addEventListener('click', selectAnswer);
+var I = index
+if (I>3){
+I = 0
+}
+        console.log(index)
+       button.innerText = currentQuestionData.answers[index].text;
+       button.dataset.correct = currentQuestionData.answers[index].correct;
+       button.addEventListener('click', selectAnswer);
     });
 }
 
@@ -105,6 +114,10 @@ function selectAnswer(e) {
     }
 }
 
+function endQuiz(){
+    questionContainer.style.display = "none"
+    scoreContainer.style.display = "block"
+}
 // Function to end the quiz
 function submit() {
     questionContainer.innerHTML = `<h2>score!</h2><p>Your score is ${score}/${questions.length}</p>`;

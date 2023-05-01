@@ -28,9 +28,12 @@
   margin-bottom: 20px;
   background-color: #2980b9;
 }
-
+.score-container {
+display: none;
+}
 
 .question-container {
+  display: none;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
